@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Maintenance Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Initial Vehicle Registration</h2>
+        <form action="Vehicleregistrationform.php" method="post">
+
+            <fieldset>
+                <legend>Customer Contact Information</legend>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name"> Name:</label>
+                        <input type="text" id="CustomerName" name="name" placeholder="Enter full name" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="CustomerEmail" name="email" placeholder="Enter email" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="CustomerPhone" name="phone" placeholder="xxx-xxx-xxxx"
+                            pattern="\d{3}-\d{3}-\d{4}" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Vehicle Information</legend>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="make">Make:</label>
+                        <input type="text" id="VehicleMake" name="make" placeholder="Enter vehicle make" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="model">Model:</label>
+                        <input type="text" id="VehicleModel" name="model" placeholder="Enter vehicle model" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="year">Year:</label>
+                        <input type="number" id="VehicleYear" name="year" placeholder="Enter vehicle year" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="Dateofservice">Date of Service:</label>
+                        <input type="date" id="Dateofservice" name="Dateofservice" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="form-row">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+
+        <h2>Main Service Dashboard</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Key Service</th>
+                    <th>Upcoming Maintenance</th>
+                    <th>Status</th>
+                    <th>Date of Service</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Oil Change</td>
+                    <td>December 15, 2026</td>
+                    <td>Upcoming</td>
+                    <td>
+                        <label for="oil-change-date">Date</label>
+                        <input type="date" id="oil-change-date" name="oil_change_date">
+                    </td>
+                    <td>
+                        <button type="button">Done</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tire Rotation</td>
+                    <td>January 10, 2027</td>
+                    <td>Upcoming</td>
+                    <td>
+                        <label for="tire-rotation-date">Date</label>
+                        <input type="date" id="tire-rotation-date" name="tire_rotation_date">
+                    </td>
+                    <td>
+                        <button type="button">Done</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    
+
+
+</body>
+
+</html>
