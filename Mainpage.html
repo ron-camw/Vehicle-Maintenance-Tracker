@@ -5,11 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vehicle Maintenance Tracker</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <div class="container">
+        <header class="page-header">
+            <p class="eyebrow">Vehicle care, organized</p>
+            <h1>Vehicle Maintenance Tracker</h1>
+            <p class="page-description">Register a vehicle and keep upcoming maintenance in view.</p>
+        </header>
+
         <h2>Initial Vehicle Registration</h2>
         <form action="Vehicleregistrationform.php" method="post">
 
@@ -43,14 +49,14 @@
                 <div class="form-row">
                     <div class="form-group">
                         <label for="make">Make:</label>
-                        <input type="text" id="VehicleMake" name="make" placeholder="Enter vehicle make" required>
+                        <input type="text" id="VehicleMake" name="make" placeholder="e.g., Toyota, Honda, Ford, etc." required>
                     </div>
                 </div>
 
                 <div class="form-row">
                     <div class="form-group">
                         <label for="model">Model:</label>
-                        <input type="text" id="VehicleModel" name="model" placeholder="Enter vehicle model" required>
+                        <input type="text" id="VehicleModel" name="model" placeholder="e.g., Camry, Civic, F-150, etc." required>
                     </div>
                 </div>
 
@@ -75,7 +81,8 @@
         </form>
 
         <h2>Main Service Dashboard</h2>
-        <table border="1">
+        <div class="table-wrap">
+        <table>
             <thead>
                 <tr>
                     <th>Key Service</th>
@@ -112,6 +119,7 @@
                 </tr>
             </tbody>
         </table>
+        </div>
     </div>
 
     
